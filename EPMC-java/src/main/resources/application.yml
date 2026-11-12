@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: epmc-java
+  
+  profiles:
+    active: dev
+
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+portfolio:
+  maxGrants: 10
+  maxConcurrentLookups: 10
+  perCallTimeoutSeconds: 5
+  overallTimeoutSeconds: 30
+  maxPublicationsPerGrant: 5
+
+external-apis:
+  grist:
+    baseUrl: http://localhost:8081
+    timeout: 5000
+    retries: 3
+  articles:
+    baseUrl: http://localhost:8082
+    timeout: 5000
+    retries: 3
+
+logging:
+  level:
+    root: INFO
+    com.example.epmc: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"

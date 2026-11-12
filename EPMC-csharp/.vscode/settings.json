@@ -1,0 +1,46 @@
+{
+    // .NET Configuration
+    "omnisharp.enableRoslynAnalyzers": true,
+    "omnisharp.enableEditorConfigSupport": true,
+    "omnisharp.enableAsyncCompletion": true,
+    "omnisharp.analyzeOpenDocumentsOnly": false,
+    "omnisharp.useModernNet": true,
+
+    // Editor Configuration
+    "[csharp]": {
+        "editor.defaultFormatter": "ms-dotnettools.csharp",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.cs": "explicit",
+            "source.organizeImports": "explicit"
+        }
+    },
+
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+
+    // File Association
+    "files.associations": {
+        "*.http": "http"
+    },
+
+    // Search Configuration
+    "search.exclude": {
+        "bin/": true,
+        "obj/": true,
+        ".vs/": true,
+        ".vscode/": false
+    },
+
+    // Terminal
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+
+    // C# Dev Kit
+    "dotnet.defaultSolutionOrFolder": "${workspaceFolder}/EPMC.sln",
+    "dotnet.trustedProjects": [
+        "${workspaceFolder}"
+    ],
+
+    // Debug
+    "debug.internalConsoleOptions": "neverOpen"
+}

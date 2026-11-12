@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  epmc-java:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: epmc-java
+    ports:
+      - "8080:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
+      - portfolio.max-grants=10
+      - portfolio.max-concurrent-lookups=10
+      - portfolio.per-call-timeout-seconds=5
+      - portfolio.overall-timeout-seconds=30
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/api/portfolio/institution-portfolio?institution=Cambridge"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 5s
+    restart: unless-stopped
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

@@ -1,0 +1,37 @@
+@EPMC_HostAddress = http://localhost:8080
+
+### Test 1: Get portfolio for Cambridge with default limits
+GET {{EPMC_HostAddress}}/api/portfolio/institution-portfolio?institution=Cambridge
+Accept: application/json
+
+###
+
+### Test 2: Get portfolio for Manchester with custom limits
+GET {{EPMC_HostAddress}}/api/portfolio/institution-portfolio?institution=Manchester&limit=5&publicationsPerGrant=3
+Accept: application/json
+
+###
+
+### Test 3: Get portfolio for Oxford
+GET {{EPMC_HostAddress}}/api/portfolio/institution-portfolio?institution=Oxford
+Accept: application/json
+
+###
+
+### Test 4: Invalid request - empty institution (should return 400)
+GET {{EPMC_HostAddress}}/api/portfolio/institution-portfolio?institution=
+Accept: application/json
+
+###
+
+### Test 5: Invalid request - limit exceeds maximum (should return 400)
+GET {{EPMC_HostAddress}}/api/portfolio/institution-portfolio?institution=Cambridge&limit=15
+Accept: application/json
+
+###
+
+### Test 6: Swagger UI
+GET {{EPMC_HostAddress}}/swagger
+Accept: text/html
+
+###
