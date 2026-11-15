@@ -6,7 +6,7 @@ Get EPMC running locally in minutes.
 
 ## Prerequisites
 
-### C# EPMC
+### C# EPMC-csharp
 - **.NET 8 SDK** ([download](https://dotnet.microsoft.com/download))
 - **VS Code** (optional, for debugging)
 
@@ -130,7 +130,7 @@ curl "http://localhost:8080/api/portfolio/institution-portfolio?institution=Camb
 
 ### Using Swagger UI
 
-- **C# EPMC**: http://localhost:8080/swagger
+- **C# EPMC-csharp**: http://localhost:8080/swagger
 - **Java EPMC-Java**: http://localhost:8080/swagger-ui.html
 
 ---

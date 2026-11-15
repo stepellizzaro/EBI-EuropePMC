@@ -3,6 +3,9 @@
 **Date**: November 10, 2026  
 **Project Scope**: Technical Take-Home Test for Technical Project Lead Role (3 hours)  
 **Project Approach**: Two complete implementations: C# (ASP.NET Core 8) and Java (Spring Boot 3)
+
+---
+
 The Java version fulfills the assignment; the C# version demonstrates my working expertise in my primary technology stack.
 
 ---
@@ -162,7 +165,7 @@ curl "http://localhost:8080/api/portfolio/institution-portfolio?institution="
 
 **Using Swagger UI:**
 
-- **C# EPMC**: http://localhost:8080/swagger
+- **C# EPMC-csharp**: http://localhost:8080/swagger
 - **Java EPMC-Java**: http://localhost:8080/swagger-ui.html
 
 ---
@@ -245,6 +248,7 @@ Response
 | [DEPLOYMENT.md](./DEPLOYMENT.md) | Configuration, Docker, environment tuning |
 | [TESTING.md](./TESTING.md) | Test coverage, test scenarios, running tests |
 | [SUPPORT.md](./SUPPORT.md) | Common commands, API testing, troubleshooting |
+| [AI-WORKFLOW.md](./AI-WORKFLOW.md) | Engineering Process & AI Collaboration |
 | [TECH_DEBT.md](./TECH_DEBT.md) | Trade-offs, limitations, roadmap |
 | [GLOSSARY.md](./GLOSSARY.md) | Domain terminology |
 
@@ -260,6 +264,7 @@ C:\Repos\EBI-EuropePMC\
 ├── DEPLOYMENT.md                        # Configuration & deployment
 ├── TESTING.md                           # Test guide
 ├── SUPPORT.md                           # Common commands & troubleshooting
+├── AI-WORKFLOW.md                       # Engineering Process & AI Collaboration
 ├── TECH_DEBT.md                         # Trade-offs & roadmap
 ├── GLOSSARY.md                          # Domain terminology
 │

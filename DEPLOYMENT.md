@@ -8,7 +8,7 @@ Deploy EPMC to local, cloud, or Docker environments.
 
 Both implementations use configuration-driven settings for environment-specific tuning.
 
-### C# EPMC (appsettings.json)
+### C# EPMC-csharp (appsettings.json)
 
 ```json
 {
@@ -79,7 +79,7 @@ java -jar target/epmc-java-1.0.0.jar
 
 ## Local Development
 
-### C# EPMC
+### C# EPMC-csharp
 
 ```bash
 cd EPMC-csharp
@@ -101,7 +101,7 @@ mvn spring-boot:run
 
 ## Docker Deployment
 
-### C# EPMC
+### C# EPMC-csharp
 
 **Build image:**
 

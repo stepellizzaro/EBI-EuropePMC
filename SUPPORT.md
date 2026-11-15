@@ -6,7 +6,7 @@ Common commands, API testing, and troubleshooting guide.
 
 ## Common Commands
 
-### C# EPMC
+### C# EPMC-csharp
 
 **Build & Run:**
 
@@ -154,7 +154,7 @@ curl -i "http://localhost:8080/api/portfolio/institution-portfolio?institution=C
 
 ### Using Swagger UI
 
-**C# EPMC:**
+**C# EPMC-csharp:**
 
 1. Start the service: `dotnet run`
 2. Open http://localhost:8080/swagger

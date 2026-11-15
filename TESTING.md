@@ -155,7 +155,7 @@ Scenarios tested:
 
 ## Running Tests
 
-### C# EPMC
+### C# EPMC-csharp
 
 **All tests:**
 
